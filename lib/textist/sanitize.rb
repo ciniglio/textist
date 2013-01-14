@@ -9,7 +9,7 @@ module Textist
     def sanitize(s)
       s.downcase!
       s = Sanitize.clean(s)
-      s.gsub! PUNCT, ''
+      s.gsub PUNCT, ''
     end
   end
 
