@@ -50,7 +50,7 @@ module Textist
     end
   end
 
-  def vectorize(h)
+  def self.vectorize(h)
     v = Vectorize.new(h)
     return v.vectors
   end

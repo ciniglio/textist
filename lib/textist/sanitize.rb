@@ -11,7 +11,7 @@ module Textist
     end
   end
 
-  def sanitize(s)
+  def self.sanitize(s)
     Sanitizer::sanitize(s)
   end
 end
