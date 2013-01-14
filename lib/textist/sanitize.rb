@@ -12,6 +12,6 @@ module Textist
   end
 
   def self.sanitize(s)
-    Sanitizer::sanitize(s)
+    Class.new.extend(Sanitizer).sanitize(s)
   end
 end
