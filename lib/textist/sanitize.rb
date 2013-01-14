@@ -10,4 +10,8 @@ module Textist
       s.gsub! PUNCT, ''
     end
   end
+
+  def sanitize(s)
+    Sanitizer::sanitize(s)
+  end
 end
