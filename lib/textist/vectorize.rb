@@ -45,6 +45,14 @@ module Textist
       a
     end
 
+    def vectors
+      @vectors
+    end
+  end
+
+  def vectorize(h)
+    v = Vectorize.new(h)
+    return v.vectors
   end
 
   class IdVector
